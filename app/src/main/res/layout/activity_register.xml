@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/backgoundTan"
+    tools:context="com.example.ahmedkhalil.intenttask.RegisterActivity">
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/register"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="@dimen/_40sdp"
+      android:textSize="@dimen/_35sdp"
+      android:textColor="@color/colorPrimary"
+      android:shadowColor="@color/txtShadow"
+      android:shadowDx="1"
+      android:shadowDy="1"
+      android:shadowRadius="2"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:orientation="vertical">
+
+      <android.support.design.widget.TextInputLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Name"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_marginBottom="@dimen/_5sdp"/>
+      </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="Email"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_marginBottom="@dimen/_5sdp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword|numberPassword"
+                android:hint="Password"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_marginBottom="@dimen/_5sdp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword|numberPassword"
+                android:hint="Confirm Password"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_marginBottom="@dimen/_5sdp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:hint="Phone"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_marginBottom="@dimen/_5sdp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etBio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|number|numberSigned|textCapWords|textEmailAddress|textLongMessage|textAutoComplete"
+                android:hint="Bio"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_marginBottom="@dimen/_5sdp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/regBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_txt"
+            android:textColor="@color/backgoundTan"
+            android:background="@color/colorPrimary"/>
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>
